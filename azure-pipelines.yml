@@ -3,17 +3,8 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-# codeway.yaml
-# Pipeline summary
-# This is triggered both by pull requests and by merges to master branch.
-# Some of the stages/jobs/scripts below are conditionally ran depending on how the pipeline was triggered.
-resources:
-    repositories:
-      - repository: codeway
-        type: githubenterprise
-        name: codeway/templates
-        endpoint: ghe
-   
+
+  
 trigger:
    - "*"
 pr:
@@ -27,6 +18,7 @@ variables:
       - group: Defaults  
 stages:
     - template: templates/mssi-win-dotnet-library-v0-alpha.yaml@codeway
+    
       parameters:   
         isDotnetCore: true
         artifactName: 'buildArtifacts'
