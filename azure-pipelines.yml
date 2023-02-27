@@ -5,7 +5,7 @@
 
 resources:
     repositories:
-      - repository: 
+      - repository: azure-pipelines
         type: githubenterprise
         name: codeway/templates
         endpoint: ghe
