@@ -8,7 +8,7 @@ resources:
       - repository: 
         type: githubenterprise
         name: codeway/templates
-        endpoint: 
+        endpoint: ghe
   
 trigger:
    - "*"
