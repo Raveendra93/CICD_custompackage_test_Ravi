@@ -12,7 +12,7 @@ resources:
       - repository: codeway
         type: githubenterprise
         name: codeway/templates
-        endpoint: ghe
+        endpoint: 
    
  # name: $(Date:yyyyMMdd)$(Rev:.r)
 trigger: # Trigger on branches
