@@ -8,7 +8,7 @@ resources:
       - repository: azure-pipelines
         type: githubenterprise
         name: codeway/templates
-        endpoint: ghe
+        
   
 trigger:
    - "*"
